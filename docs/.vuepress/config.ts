@@ -19,6 +19,7 @@ export default defineUserConfig({
     navbar: [
       { text: '首页', link: '/' },
       { text: 'WaterdogPE', link: '/waterdogpe-netease/' },
+      { text: 'Network', link: '/network/' },
     ],
 
     sidebar: {
@@ -38,6 +39,20 @@ export default defineUserConfig({
             '/waterdogpe-netease/09-rewrite-layer.md',
             '/waterdogpe-netease/10-subsystems.md',
             '/waterdogpe-netease/11-dependencies.md',
+          ],
+        },
+      ],
+      '/network/': [
+        {
+          text: 'Network 架构文档',
+          children: [
+            '/network/',
+            '/network/01-overview.md',
+            '/network/02-channel-pipeline.md',
+            '/network/03-connection-session.md',
+            '/network/04-config.md',
+            '/network/05-codec-query.md',
+            '/network/06-codec-rcon.md',
           ],
         },
       ],
